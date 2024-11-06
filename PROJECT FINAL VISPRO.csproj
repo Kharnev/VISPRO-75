@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE4A433B-1CE0-4F8B-A545-B0123504C056}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT_FINAL_VISPRO</RootNamespace>
+    <AssemblyName>PROJECT FINAL VISPRO</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormDashAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashAdmin.Designer.cs">
+      <DependentUpon>FormDashAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashUserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashUserManage.Designer.cs">
+      <DependentUpon>FormDashUserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashUserManageDataDiri1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashUserManageDataDiri1.Designer.cs">
+      <DependentUpon>FormDashUserManageDataDiri1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDorm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDorm.Designer.cs">
+      <DependentUpon>FormDorm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormAnnex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormAnnex.Designer.cs">
+      <DependentUpon>FormDormAnnex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormBougenville.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormBougenville.Designer.cs">
+      <DependentUpon>FormDormBougenville.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormCrystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormCrystal.Designer.cs">
+      <DependentUpon>FormDormCrystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormEdel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormEdel.Designer.cs">
+      <DependentUpon>FormDormEdel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormGenset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormGenset.Designer.cs">
+      <DependentUpon>FormDormGenset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormGuest.Designer.cs">
+      <DependentUpon>FormDormGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormJasmineI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormJasmineI.Designer.cs">
+      <DependentUpon>FormDormJasmineI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDormJasmineII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDormJasmineII.Designer.cs">
+      <DependentUpon>FormDormJasmineII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinance.Designer.cs">
+      <DependentUpon>FormFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFinanceFee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFinanceFee.Designer.cs">
+      <DependentUpon>FormFinanceFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProf.Designer.cs">
+      <DependentUpon>FormResProf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfAnnex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfAnnex.Designer.cs">
+      <DependentUpon>FormResProfAnnex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfBougenville.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfBougenville.Designer.cs">
+      <DependentUpon>FormResProfBougenville.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfCrystal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfCrystal.Designer.cs">
+      <DependentUpon>FormResProfCrystal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfEdel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfEdel.Designer.cs">
+      <DependentUpon>FormResProfEdel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfGenset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfGenset.Designer.cs">
+      <DependentUpon>FormResProfGenset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfGuest.Designer.cs">
+      <DependentUpon>FormResProfGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfJasmineII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfJasmineII.Designer.cs">
+      <DependentUpon>FormResProfJasmineII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormResProfJasmineI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormResProfJasmineI.Designer.cs">
+      <DependentUpon>FormResProfJasmineI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDashAdmin.resx">
+      <DependentUpon>FormDashAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashUserManage.resx">
+      <DependentUpon>FormDashUserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashUserManageDataDiri1.resx">
+      <DependentUpon>FormDashUserManageDataDiri1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDorm.resx">
+      <DependentUpon>FormDorm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormAnnex.resx">
+      <DependentUpon>FormDormAnnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormBougenville.resx">
+      <DependentUpon>FormDormBougenville.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormCrystal.resx">
+      <DependentUpon>FormDormCrystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormEdel.resx">
+      <DependentUpon>FormDormEdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormGenset.resx">
+      <DependentUpon>FormDormGenset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormGuest.resx">
+      <DependentUpon>FormDormGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormJasmineI.resx">
+      <DependentUpon>FormDormJasmineI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDormJasmineII.resx">
+      <DependentUpon>FormDormJasmineII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinance.resx">
+      <DependentUpon>FormFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFinanceFee.resx">
+      <DependentUpon>FormFinanceFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProf.resx">
+      <DependentUpon>FormResProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfAnnex.resx">
+      <DependentUpon>FormResProfAnnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfBougenville.resx">
+      <DependentUpon>FormResProfBougenville.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfCrystal.resx">
+      <DependentUpon>FormResProfCrystal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfEdel.resx">
+      <DependentUpon>FormResProfEdel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfGenset.resx">
+      <DependentUpon>FormResProfGenset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfGuest.resx">
+      <DependentUpon>FormResProfGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfJasmineII.resx">
+      <DependentUpon>FormResProfJasmineII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormResProfJasmineI.resx">
+      <DependentUpon>FormResProfJasmineI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
